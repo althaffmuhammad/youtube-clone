@@ -22,7 +22,7 @@ const Sidebar = ({sidebar,category,setCategory}) => {
           <img src={home} alt="home" /><p>Home</p>
         </div>
         <div className={`side-link ${category===20?"active":""}`} onClick={()=>setCategory(20)}>
-          <img src={game_icon} alt="home" /><p>Game_icon</p>
+          <img src={game_icon} alt="home" /><p>Game</p>
         </div>
         <div className={`side-link ${category===2?"active":""}`} onClick={()=>setCategory(2)}>
           <img src={automobiles} alt="home" /><p>Automobiles</p>
