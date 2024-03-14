@@ -7,6 +7,7 @@ import jack from'../../assets/jack.png'
 import { useEffect, useState } from 'react'
 import { API_KEY, value_converter } from './../../Data';
 import { useParams } from 'react-router-dom'
+import moment from 'moment'
 
 const PlayVideo = () => {
 
@@ -43,7 +44,7 @@ const PlayVideo = () => {
         <iframe src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <h3>{apiData?apiData.snippet.title:"title here"}</h3>
         <div className="play-video-info">
-            <p>{value_converter(apiData?apiData.statistics.viewCount:"16k")} views &bull; 2 days ago</p>
+            <p>{value_converter(apiData?apiData.statistics.viewCount:"16k")} views &bull; {apiData?moment(apiData.snippet.publishedAt).fromNow():"2 days ago"}</p>
             <div>
                 <span><img src={like} alt="" />{value_converter(apiData?apiData.statistics.likeCount:125)}</span>
                 <span><img src={dislike} alt="" /></span>
