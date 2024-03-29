@@ -1,6 +1,6 @@
 import './Navbar.css'
 import menu_icon from '../../assets/menu.png'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/YouTube_Logo_2017.svg.png'
 import search_icon from '../../assets/search.png'
 import upload_icon from '../../assets/upload.png'
 import notification_icon from '../../assets/notification.png'
@@ -13,7 +13,7 @@ const Navbar = ({setSidebar}) => {
     <nav className='flex-div'>
         <div className="nav-left flex-div">
             <img src={menu_icon} alt="menu" className="menu-icon" onClick={()=>setSidebar(prev=>prev===false?true:false)}/>
-            <Link to="/"><img src={menu_icon} alt="logo" className="logo" /></Link>
+            <Link to="/"><img src={logo} alt="logo" className="logo" /></Link>
         </div>
 
         <div className="nav-middle flex-div">
