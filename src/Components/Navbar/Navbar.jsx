@@ -7,7 +7,7 @@ import notification_icon from '../../assets/notification.png'
 import more_icon from '../../assets/more.png'
 import profile_icon from '../../assets/simon.png'
 import { Link } from 'react-router-dom'
-
+    //eslint-disable-next-line
 const Navbar = ({setSidebar}) => {
   return (
     <nav className='flex-div'>

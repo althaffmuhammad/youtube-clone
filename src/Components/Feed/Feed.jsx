@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import { value_converter } from '../../Data'
 import moment from 'moment'
 
+    //eslint-disable-next-line
 const Feed = ({category}) => {
     const [data,setData]=useState([])
 
@@ -14,6 +15,7 @@ const Feed = ({category}) => {
     }
     useEffect(()=>{
         fetchData()
+    //eslint-disable-next-line
     },[category])
   return (
    <div className="feed">
