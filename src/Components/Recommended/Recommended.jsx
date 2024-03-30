@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { API_KEY } from '../../Data'
 import { Link } from 'react-router-dom'
 
-
+//eslint-disable-next-line
 const Recommended = ({categoryId}) => {
   
   const[apiData,setApiData]=useState([])

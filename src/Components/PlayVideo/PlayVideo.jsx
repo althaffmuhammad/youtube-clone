@@ -34,9 +34,11 @@ const PlayVideo = () => {
 
         useEffect(()=>{
             fetchVideoData()
+            //eslint-disable-next-line
         },[videoId])
         useEffect(()=>{
             fetchOtherData()
+            //eslint-disable-next-line
         },[apiData])
   return (
     <div className='play-video'>
